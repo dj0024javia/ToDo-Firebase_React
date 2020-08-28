@@ -51,6 +51,7 @@ function App() {
       <Button disabled={!input} type="submit" variant="contained" color="primary" onClick={addToDo}>Add ToDo</Button>
 
       <ul>
+        {/* eachtodo is an object here containing ToDo and timestamp */}
         {todos.map(eachtodo => (
           <Todo eachtodo={eachtodo}/>
         ))}
